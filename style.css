@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background: #ffcfdf;
+  background: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+/*   background: linear-gradient(to top right, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%); */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  margin: 0 auto;
+/*   background: rgba(0,0,0,0.3); */
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin: 0;
+  padding-bottom: 30px;
+  color: #fff;
+  text-shadow: 0 0 2px black;
+}
+
+.help {
+  color: #333;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.left, .right {
+  text-align: center;
+  padding: 20px 0;
+  width: 250px;
+  height: 240px;
+  border: thin solid #ddd;
+  background: white;
+}
+
+.star {
+	display: inline-block;
+  margin: 0 15px;
+}
+
+.star:after {
+  content: "\2605";
+  font-size: 45px;
+}
+
+.number {
+  background-color: #e5e7eb;
+  color: #fff;
+  border: none;
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+.number:focus, .number:active {
+  outline: none;
+  border: 1px solid #aaa;
+}
+
+.game-done {
+  position: relative;
+  top: 30px;
+}
+
+.game-done .message {
+  font-size: 2rem;
+  margin: 15px;
+}
+
+.game-done button {
+  background-color: #e5e7eb;
+  color: #fff;
+  border: none;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.game-done button:hover {
+  background-color: #ccc;
+}
+
+.game-done button:focus, .game-done button:active {
+  outline: none;
+  border: 1px solid #aaa;
+}
+
+.timer {
+	color: #333;
+  margin: 20px 0;
+  text-align: center;
+}
